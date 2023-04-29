@@ -6,22 +6,21 @@
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: gray;
+ /*    background-color: gray; */
 }
 
 .container .navbar-menu .logo {
     padding-left: 15px;
     width: 80px;
     font-size: 1.2rem;
-    background-color: aqua;
+   /*  background-color: aqua; */
 }
 
-.container .navbar-menu .logo .brand  {
-
-    background-color: orange;
+.container .navbar-menu .logo .brand {
+/* 
+    background-color: orange; */
     width: 70px;
 }
-
 
 .container .navbar-menu .logo .brand p {
     margin: 0;
@@ -30,16 +29,17 @@
 
 .container .navbar-menu .search {
     width: 140px;
-    background-color: yellow;
+/*     background-color: yellow; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container .navbar-menu .search button {
-    width: 100px;
+    width: 110px;
     height: 30px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .container .navbar-menu .search button svg {
@@ -50,27 +50,55 @@
     color: gray;
 }
 
+.container .navbar-menu .toggle {
+    display: none;
+    width: 58px;
+    background-color: white;
+    padding-left: 10px;
+
+}
+
+.container .navbar-menu .toggle .lines {
+    cursor: pointer;
+    background-color: azure;
+    border-radius: 5px;
+    width: 40px;
+    height: 42.5px;
+    margin-top: 15px;
+    padding: 0.05px 3px 6px 3px;
+}
+
+.container .navbar-menu .toggle .lines hr {
+    border: 2px solid black;
+}
+
 .container .navbar-menu .options {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+/*     background-color: red; */
     width: 78.9%;
 }
 
-.container .navbar-menu .options ul {
-    display: flex;
-    flex-direction: row;
-    padding-left: 5px;
-    gap: 15px;
-}
+@media(min-width:760px) {
+    #btn-close {
+        display: none;
+    }
 
-.container .navbar-menu .options ul>li {
-    list-style: none;
-    font-size: 1.1rem;
-    background-color: rgb(66, 190, 221);
-    color: black;
-    padding: 2px;
+    .container .navbar-menu .options ul {
+        display: flex;
+        flex-direction: row;
+        padding-left: 5px;
+        gap: 15px;
+    }
+
+    .container .navbar-menu .options ul>li {
+        list-style: none;
+        font-size: 1.1rem;
+        background-color: rgb(66, 190, 221);
+        color: black;
+        padding: 2px;
+    }
 }
 
 .container .navbar-menu .options ul>li:hover {
@@ -78,11 +106,58 @@
 }
 
 @media (max-width:760px) {
+    #btn-close {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        border: none;
+        cursor: pointer;
+        width: 35px;
+       
+    }
+    .container .navbar-menu .options button svg{
+        font-size: 18px;
+    }
+
     .container .navbar-menu .options {
-        display: none;
+        background-color: rgb(231, 242, 252) !important;
+        display: flex;
+
+    }
+
+    .container .navbar-menu .options ul {
+        list-style: none;
+        margin-right: 20px;
+       /*  background-color: blue; */
+    }
+
+    .container .navbar-menu .options ul>li {
+        width: 150px;
+        list-style: none;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    #right-menu {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        background-color: #ccc;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #right-menu.open {
+        right: 0;
+    }
+
+    .container .navbar-menu .toggle {
+        display: block;
     }
 
     .container .navbar-menu .logo {
-        width: 80%;
+        width: 70%;
     }
 }
