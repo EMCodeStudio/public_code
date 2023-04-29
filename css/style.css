@@ -160,7 +160,25 @@
 .container .navbar-menu .options ul>li:hover {
     cursor: pointer;
     color: rgb(0, 0, 179);
-    
+
+}
+
+.container .portrait .top {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .portrait .top h1 {
+    font-size: 2rem;
+}
+.container .portrait .top p {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 @media (max-width:760px) {
