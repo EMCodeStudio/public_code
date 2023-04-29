@@ -166,7 +166,7 @@
 .container .portrait .top {
     padding-left: 5%;
     padding-right: 5%;
-    width: 100%;
+    width: 90%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -174,15 +174,18 @@
     align-items: center;
 
 }
-.container .portrait .bottom .image{
-   padding-left: 15%;
-   padding-right: 15%;
+
+.container .portrait .bottom .image {
+    padding-left: 15%;
+    padding-right: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    width: 70%;
+
 }
-.container .portrait .bottom .image img{
+
+.container .portrait .bottom .image img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -191,13 +194,55 @@
 .container .portrait .top h1 {
     font-size: 2rem;
 }
+
 .container .portrait .top p {
     font-size: 18px;
     font-weight: 400;
 }
 
+.container .services {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
 
+.container .services .row {
+    padding-top: 30px;
+   /*  background-color: #000; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+  
+  
+}
 
+.container .services .row .service-1 {
+    width: 300px;
+    height: 250px;
+    background-color: #ccc;
+    margin-top: 15px;
+}
+
+.container .services .row .service-2 {
+    width: 300px;
+    height: 250px;
+    background-color: #ccc;
+    margin-top: 15px;
+
+}
+
+.container .services .row .service-3 {
+    width: 300px;
+    height: 250px;
+    background-color: #ccc;
+    margin-top: 15px;
+}
 
 @media (max-width:760px) {
     #btn-close {
