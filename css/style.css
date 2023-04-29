@@ -164,13 +164,28 @@
 }
 
 .container .portrait .top {
+    padding-left: 5%;
+    padding-right: 5%;
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+}
+.container .portrait .bottom .image{
+   padding-left: 15%;
+   padding-right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.container .portrait .bottom .image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 .container .portrait .top h1 {
@@ -180,6 +195,9 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+
+
 
 @media (max-width:760px) {
     #btn-close {
