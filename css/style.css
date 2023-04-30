@@ -110,8 +110,6 @@
     display: none;
     width: 58px;
     padding-left: 10px;
-
-
 }
 
 .container .navbar-menu .toggle .lines {
@@ -201,7 +199,6 @@
 }
 
 .container .services {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,31 +215,24 @@
     flex-wrap: wrap;
     gap: 5%;
 
-
 }
 
-
-
 .container .services .row .service-1 {
-
     width: 300px;
     height: 250px;
-   
     margin-top: 15px;
 }
 
 .container .services .row .service-2 {
     width: 300px;
     height: 250px;
-   
     margin-top: 15px;
-
 }
 
 .container .services .row .service-3 {
     width: 300px;
     height: 250px;
-   
+
     margin-top: 15px;
 }
 
@@ -255,7 +245,8 @@
     text-align: center;
     font-weight: 600;
 }
-.container footer{
+
+.container footer {
     margin-top: 50px;
     background-color: rgb(232, 244, 255);
     text-align: center;
@@ -266,29 +257,27 @@
     gap: 15px;
 }
 
-.container footer .social .icons svg{
+.container footer .social .icons svg {
     width: 24px;
     height: 24px;
-  
+
 
 }
-.container footer .social{
+
+.container footer .social {
     padding-top: 14px;
-   /*  background-color: orange; */
     gap: 15px;
     display: flex;
     flex-direction: row;
     width: 20%;
 }
 
-.container footer .copyrigth{
-   width: 55%;
-   height: 40px;
-  /*  background-color: red; */
-   padding-bottom: 10px;
-  
-}
+.container footer .copyrigth {
+    width: 55%;
+    height: 40px;
+    padding-bottom: 10px;
 
+}
 
 @media (max-width:760px) {
     #btn-close {
@@ -330,7 +319,7 @@
         right: -200px;
         width: 200px;
         height: 100%;
-       
+
         transition: all 0.3s ease-in-out;
     }
 
